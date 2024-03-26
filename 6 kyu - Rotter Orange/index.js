@@ -67,22 +67,3 @@ function calcRotTime(box){
     }
     return freshOranges === 0 ? time : -1;
 }
-
-function calsc2(box){
-    const rows = box.length;
-    const cols = box[0].length;
-    var fresh, rotten = 0
-    var queue = []
-
-    for(let i = 0; i < rows; i++){
-        for(let j = 0; j< cols; j++){
-            if(box[i][j] == 1) fresh += 1
-            if(box[i][j] == 2) queue.push([i, j])
-        }
-    }
-
-    directions = [[0, 1], [0, -1], [1, 0], [-1, 0]]
-    while (fresh > 0 && queue.length > 0) {
-        
-    }
-}
